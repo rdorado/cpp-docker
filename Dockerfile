@@ -17,6 +17,6 @@ COPY src /app/src
 
 # Compile the sources using cmake, results will be output 
 RUN cd /app/build;  \
-    cmake ../src
+    cmake ../src; make
 
 CMD ["./build/output"]
